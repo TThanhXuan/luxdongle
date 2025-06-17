@@ -314,3 +314,7 @@ title: Cài đặt dòng xả theo thời gian
 - Cài đặt giới hạn dòng xả theo khung giờ.
 - Bật switch "trạng thái" nếu bạn muốn sử dụng chức năng này
 
+### 7. Gửi data đến server lux như dongle hãng
+- Điền Serial number của dongle của bạn (vd: BAXXXXXXXX)
+- Bật chức năng gửi data đến server lux
+
