@@ -239,6 +239,37 @@ cards:
                 icon: mdi:battery
 title: Cài đặt hiển thị
 ```
+- Hiển thị đẩy dữ liệu đến server lux
+
+```yaml
+type: vertical-stack
+cards:
+    - type: horizontal-stack
+        cards:
+            - type: custom:mushroom-entity-card
+                entity: switch.dg_005034_gui_data_den_lux_server
+                secondary_info: state
+                primary_info: name
+                name: Trạng Thái
+                tap_action:
+                    action: toggle
+                icon_type: icon
+                icon_color: accent
+    - type: vertical-stack
+        cards:
+            - type: custom:mushroom-entity-card
+                entity: text.dg_005034_dongle_sn
+                name: Dongle serial, trên dongle hãng. !! Cần cài đặt !!
+            - type: custom:mushroom-entity-card
+                entity: sensor.dg_005034_dongle_serial_number
+                name: Dongle serial, đã được cài đặt
+            - type: custom:mushroom-entity-card
+                entity: sensor.dg_005034_ivt_serial_number
+                name: Inverter serial number
+title: Cài đặt gửi data đến server lux
+```
+
+
 - Hiển thị cài đặt giới hạn dòng xả theo giờ:
 ```yaml
 type: vertical-stack
