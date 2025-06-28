@@ -213,6 +213,247 @@ cards:
         icon: mdi:transmission-tower-import
 ```
 
+- Hiển thị vòng horseshoe:
+```yaml
+type: horizontal-stack
+cards:
+  - type: custom:flex-horseshoe-card
+    entities:
+      - id: 0
+        entity: sensor.dg_005034_bms1_state_of_charge
+        decimals: 0
+        name: Pin
+      - id: 1
+        entity: sensor.dg_005034_ivt_battery_discharge_today
+        decimals: 1
+        name: Xả hôm nay
+        unit: kW
+        icon: mdi:battery-minus
+      - id: 2
+        entity: sensor.dg_005034_ivt_battery_charge_today
+        decimals: 1
+        name: Sạc hôm nay
+        unit: kW
+        icon: mdi:battery-plus
+      - id: 3
+        entity: sensor.dg_005034_ivt_battery_power
+        decimals: 0
+        name: PIN Lithium
+        icon: mdi:home-battery-outline
+    show:
+      scale_tickmarks: false
+      horseshoe_style: colorstop
+    layout:
+      hlines:
+        - id: 0
+          xpos: 50
+          ypos: 40
+          length: 60
+          styles:
+            - stroke: var(--primary-text-color);
+            - stroke-width: 3;
+            - stroke-linecap: round;
+            - opacity: 0.7;
+        - id: 1
+          xpos: 50
+          ypos: 60
+          length: 60
+          styles:
+            - stroke: var(--primary-text-color);
+            - stroke-width: 3;
+            - stroke-linecap: round;
+            - opacity: 0.7;
+      vlines:
+        - id: 0
+          xpos: 50
+          ypos: 50
+          length: 20
+          styles:
+            - stroke: var(--primary-text-color);
+            - stroke-width: 3;
+            - stroke-linecap: round;
+            - opacity: 0.7;
+      states:
+        - id: 0
+          entity_index: 0
+          xpos: 55
+          ypos: 32
+          styles:
+            - font-size: 2.5em;
+        - id: 1
+          entity_index: 1
+          xpos: 40
+          ypos: 54
+          styles:
+            - font-size: 1.5em;
+        - id: 2
+          entity_index: 2
+          xpos: 80
+          ypos: 54
+          styles:
+            - font-size: 1.5em;
+        - id: 3
+          entity_index: 3
+          xpos: 57
+          ypos: 77
+          styles:
+            - font-size: 2.0em;
+      names:
+        - id: 0
+          entity_index: 0
+          xpos: 50
+          ypos: 95
+          styles:
+            - font-size: 1.5em;
+      icons:
+        - id: 0
+          entity_index: 0
+          xpos: 27
+          ypos: 30
+          size: 2.5
+        - id: 1
+          entity_index: 1
+          xpos: 20
+          ypos: 53
+          size: 2.5
+        - id: 2
+          entity_index: 2
+          xpos: 60
+          ypos: 53
+          size: 2.5
+        - id: 3
+          entity_index: 3
+          xpos: 30
+          ypos: 75
+          size: 2.5
+    horseshoe_scale:
+      min: 0
+      max: 100
+      width: 10
+    color_stops:
+      "0": "#F70202"
+      "20": "#FFDE59"
+      "50": "#18F80D"
+  - type: custom:flex-horseshoe-card
+    entities:
+      - id: 0
+        entity: sensor.dg_005034_ivt_pv_power
+        decimals: 0
+        name: PV
+        unit: ""
+        icon: mdi:solar-power
+      - id: 1
+        entity: sensor.dg_005034_ivt_pv1_today
+        decimals: 1
+        name: PV1
+        unit: kW
+        icon: mdi:solar-power-variant
+      - id: 2
+        entity: sensor.dg_005034_ivt_pv2_today
+        decimals: 1
+        name: PV2
+        unit: kW
+        icon: mdi:solar-power-variant
+      - id: 3
+        entity: sensor.dg_005034_ivt_pv_today
+        decimals: 1
+        name: PV Today
+        icon: mdi:solar-power-variant
+    show:
+      scale_tickmarks: false
+      horseshoe_style: colorstop
+    layout:
+      hlines:
+        - id: 0
+          xpos: 50
+          ypos: 40
+          length: 60
+          styles:
+            - stroke: var(--primary-text-color);
+            - stroke-width: 3;
+            - stroke-linecap: round;
+            - opacity: 0.7;
+        - id: 1
+          xpos: 50
+          ypos: 60
+          length: 60
+          styles:
+            - stroke: var(--primary-text-color);
+            - stroke-width: 3;
+            - stroke-linecap: round;
+            - opacity: 0.7;
+      vlines:
+        - id: 0
+          xpos: 50
+          ypos: 50
+          length: 20
+          styles:
+            - stroke: var(--primary-text-color);
+            - stroke-width: 3;
+            - stroke-linecap: round;
+            - opacity: 0.7;
+      states:
+        - id: 0
+          entity_index: 0
+          xpos: 55
+          ypos: 32
+          styles:
+            - font-size: 2.5em;
+        - id: 1
+          entity_index: 1
+          xpos: 40
+          ypos: 54
+          styles:
+            - font-size: 1.5em;
+        - id: 2
+          entity_index: 2
+          xpos: 80
+          ypos: 54
+          styles:
+            - font-size: 1.5em;
+        - id: 3
+          entity_index: 3
+          xpos: 57
+          ypos: 77
+          styles:
+            - font-size: 2.0em;
+      names:
+        - id: 0
+          entity_index: 0
+          xpos: 50
+          ypos: 95
+          styles:
+            - font-size: 1.5em;
+      icons:
+        - id: 0
+          entity_index: 0
+          xpos: 27
+          ypos: 30
+          size: 2.5
+        - id: 1
+          entity_index: 1
+          xpos: 20
+          ypos: 53
+          size: 2.5
+        - id: 2
+          entity_index: 2
+          xpos: 60
+          ypos: 53
+          size: 2.5
+        - id: 3
+          entity_index: 3
+          xpos: 30
+          ypos: 75
+          size: 2.5
+    horseshoe_scale:
+      min: 0
+      max: 6000
+      width: 7
+    color_stops:
+      "0": "#60E92A"
+      "4000": "#FFDE59"
+      "5000": "#F04040"
+```
 - Hiển thị cài đặt công suất:
 ```yaml
 type: vertical-stack
