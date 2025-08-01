@@ -1,13 +1,13 @@
 # lux dongle.
 
-## Phương án thay thế cho dongle lux
-- Đưa dữ liệu update 1-2s.
+## Phương án thay thế cho dongle lux, trị bệnh offline dongle lux
+- Đưa dữ liệu update 1-2s đến server của solarbox
 - Đưa dữ liệu lên server lux, nhận cài đặt từ server lux như dongle hãng.
 - Không thu phí server.
 
 ## Hướng dẫn sử dụng
 
-### 1. Các đèn báo trên dongle
+### 1. Các đèn báo trên DIY dongle
 - Đèn 1: trạng thái kết nối wifi.
 - Đèn 2: trạng thái kết nối inverter.
 - Đèn 3: trạng thái kết nối cloud của solarbox.
