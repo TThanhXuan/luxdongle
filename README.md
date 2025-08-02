@@ -1,7 +1,7 @@
 # lux dongle.
 
 ## Phương án thay thế cho dongle lux, trị bệnh offline dongle lux
-- Đưa dữ liệu update 1-2s đến server của solarbox
+- Đưa dữ liệu update realtime đến server của solarbox
 - Đưa dữ liệu lên server lux, nhận cài đặt từ server lux như dongle hãng.
 - Không thu phí server.
 
