@@ -22,7 +22,7 @@
 
 ### 3. Theo dõi biến tần từ xa
 - Truy cập theo địa chỉ https://luxpower.solarbox.uk/dg-xxxxxx. Trong đó dg-xxxxxxxx là mã dongle của bạn.
-- Demo: https://luxpower.solarbox.uk/dg-d09130
+- Demo: https://luxpower.solarbox.uk/dg-005034
 
 ### 4. Gửi data đến luxcloud như dongle hãng(sử dụng trong trường hợp dongle hãng bị hỏng hoặc bạn không muốn dùng dongle hãng)
 - Truy cập trang cài đặt http://dg-xxxxxx.local, Trong đó dg-xxxxxxxx là mã dongle của bạn.
