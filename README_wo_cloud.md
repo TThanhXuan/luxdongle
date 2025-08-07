@@ -8,7 +8,6 @@
 ### 1. Các đèn báo trên dongle
 - Đèn 1: trạng thái kết nối wifi
 - Đèn 2: trạng thái kết nối inverter
-- Đèn 3: trạng thái kết nối cloud của solar box (bạn nào không đăng ký cloud có thể bỏ qua đèn này)
 - Đèn 4: trạng thái kết nối cloud lux power nếu bạn có bật chức năng đẩy data về lux server.
 
 ### 2. Kết nối wifi cho dongle (chỉ làm 1 lần)
@@ -17,15 +16,31 @@
 - Kết nối đến wifi: solarbox_dongle
 - Vào địa chỉ http://192.168.4.1 để cài đặt wifi
 
-### 3. Đăng nhập vào solarbox cloud (chỉ cho ai có sử dụng cloud)
-
-- Đăng nhập với thông tin mình gửi. [Video hướng dẫn](https://youtube.com/shorts/DpIyl63lWtc?feature=share)
-
-### 4. Kết nối dongle với homeassistant trong mạng local 
+### 3. Kết nối dongle với homeassistant trong mạng local 
 
 - Khi thiết bị kết nối với wifi trên homeassistant sẽ hiện thông báo nhận thiết bị mới. các bạn nhấn thêm thiết bị.
+- Dongle có mở cổng 8000 và có thể kết nối bằng lux python.
+- Ngoài ra dongle còn hỗ trợ 1 số sensor và control như sau
+- Hiển thị hình ảnh tham khảo:
 
-- Cài đặt hiển thị unsynk-power-flow-card:
+
+<p align="center">
+  <img src="pics/IMG_2975.PNG" width="400"/>
+  <img src="pics/IMG_2976.PNG" width="400"/>
+  <img src="pics/IMG_2977.PNG" width="400"/>
+  <img src="pics/IMG_2978.PNG" width="400"/>
+  <img src="pics/IMG_2979.PNG" width="400"/>
+  <img src="pics/IMG_2980.PNG" width="400"/>
+</p>
+
+
+
+### 4. Gửi data đến server lux như dongle hãng
+- Điền Serial number của dongle của bạn (vd: BAXXXXXXXX)
+- Bật chức năng gửi data đến server lux
+
+
+### 5. Một số code hiển thị
 
 ```yaml
 type: custom:stack-in-card
@@ -545,7 +560,7 @@ cards:
 title: Cài đặt dòng xả theo thời gian
 ```
 
-### 5. Thay đổi một số thông tin của hệ thống của bạn
+<!-- ### 5. Thay đổi một số thông tin của hệ thống của bạn
 - CS lắp đặt PV: là công suất lắp đặt tổng PV của bạn (dv: W)
 - CS lắp đặt PV1: là công suất lắp đặt tổng PV1 của bạn (dv: W)
 - CS lắp đặt PV2: là công suất lắp đặt tổng PV2 của bạn (dv: W)
@@ -553,9 +568,4 @@ title: Cài đặt dòng xả theo thời gian
 
 ### 6. Cài đặt giới hạn dòng xả theo giờ.
 - Cài đặt giới hạn dòng xả theo khung giờ.
-- Bật switch "trạng thái" nếu bạn muốn sử dụng chức năng này
-
-### 7. Gửi data đến server lux như dongle hãng
-- Điền Serial number của dongle của bạn (vd: BAXXXXXXXX)
-- Bật chức năng gửi data đến server lux
-
+- Bật switch "trạng thái" nếu bạn muốn sử dụng chức năng này -->
