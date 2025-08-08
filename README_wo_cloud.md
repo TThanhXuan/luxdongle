@@ -15,6 +15,7 @@
 - Cấp nguồn dongle và chờ khoản 1 phút.
 - Kết nối đến wifi: solarbox_dongle
 - Vào địa chỉ http://192.168.4.1 để cài đặt wifi
+![Cài đặt WIFI](pics/IMG_2944.PNG)
 
 ### 3. Kết nối dongle với homeassistant trong mạng local 
 
