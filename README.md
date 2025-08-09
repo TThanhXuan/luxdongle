@@ -30,6 +30,9 @@
 - Bật chức năng gửi data đến server lux.
 ![Cài đặt để gửi data đến luxcloud](pics/IMG_2943.PNG)
 
+### 5. Cài đặt kết nối BMS JK.
+- Dongle sẽ tự động dò và kết nối JK BMS, quá trình dò lần đầu tiên có thể mất đến 10p.
+
 ## FAQ
 1. Q: Dongle DIY có thể thay thế hoàn toàn dongle hãng không?
 
